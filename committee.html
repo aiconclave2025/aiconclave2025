@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/png" sizes="32x32" href="https://firebasestorage.googleapis.com/v0/b/whatsup-519.firebasestorage.app/o/favicon-32x32.png?alt=media&token=c3233c51-328c-47dc-95e4-c3b95d068bcb">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Committee | ICAI25</title>
+    <meta name="description" content="ICAI25 - International Conference on AI/ML, Digital Transformation & Sectoral Innovations, hosted by Godavari Global University">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <script src="assets/js/site-data.js"></script>
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-content">
+            <div class="loader"></div>
+            <h2>ICAI25</h2>
+            <p>Loading amazing content...</p>
+        </div>
+    </div>
+
+    <header>
+        <div class="header-top">
+            <div class="container">
+                <div class="header-contact">
+                    <a href="mailto:conferences@ggu.edu.in"><i class="fas fa-envelope"></i> conferences@ggu.edu.in</a>
+                </div>
+                <div class="header-dates">
+                    <span><i class="far fa-calendar-alt"></i> November 13-15, 2025</span>
+                </div>
+            </div>
+        </div>
+        <div class="header-main">
+            <div class="container" style="display: flex; align-items: center; justify-content: center;">
+                <div class="logo" style="flex: 0 0 auto; margin-right: 20px;">
+                    <a href="index.html">
+                        <img src="https://vduoxfcddksibwrpiuqd.supabase.co/storage/v1/object/public/image/images/Picsart_25-03-23_08-07-46-287.jpg" alt="ICAI25 Logo" class="logo-image" style="width: 180px; height: auto;">
+                    </a>
+                </div>
+                <nav id="main-nav" style="flex: 1;">
+                    <button id="menu-toggle" aria-label="Toggle Navigation Menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul class="nav-links" style="text-align: center;">
+                        <li><a href="index.html" id="nav-home">Home</a></li>
+                        <li><a href="committee.html" id="nav-committee" class="active">Committee</a></li>
+                        <li><a href="paper-submissions.html" id="nav-paper-submissions">Paper Submissions</a></li>
+                        <li><a href="registration.html" id="nav-registration">Registration</a></li>
+                        <li><a href="speakers.html" id="nav-speakers">Speakers</a></li>
+                        <li><a href="tracks.html" id="nav-tracks">Tracks</a></li>
+                        <li><a href="important-dates.html" id="nav-important-dates">Important Dates</a></li>
+                        <li><a href="contact.html" id="nav-contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+
+<div class="page-header">
+    <div class="container">
+        <h1 class="page-title">Committee</h1>
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item">Committee</li>
+        </ul>
+    </div>
+</div>
+
+<section class="committee section">
+    <div class="container">
+        <div class="committee-tabs">
+            <button class="tab-btn active" data-tab="international">International Advisory Committee</button>
+            <button class="tab-btn" data-tab="national">National Advisory Committee</button>
+            <button class="tab-btn" data-tab="industry">Industry Advisors</button>
+        </div>
+        
+        <div class="committee-content">
+            <div id="international" class="committee-panel active">
+                <h2 class="section-title">International Advisory Committee</h2>
+                
+                <ul class="committee-list" id="international-committee-list">
+                    <!-- Will be populated by JavaScript -->
+                </ul>
+            </div>
+            
+            <div id="national" class="committee-panel">
+                <h2 class="section-title">National Advisory Committee</h2>
+                
+                <ul class="committee-list" id="national-committee-list">
+                    <!-- Will be populated by JavaScript -->
+                </ul>
+            </div>
+            
+            <div id="industry" class="committee-panel">
+                <h2 class="section-title">Industry Advisors</h2>
+                
+                <ul class="committee-list" id="industry-advisors-list">
+                    <!-- Will be populated by JavaScript -->
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="cta section" style="background-color: var(--light-color); text-align: center;">
+    <div class="container">
+        <h2>Interested in Being a Committee Member?</h2>
+        <p style="margin-bottom: 1.5rem;">If you're an expert in AI, ML, or Digital Transformation and interested in joining our committee, please get in touch.</p>
+        <a href="contact.html" class="btn">Contact Us</a>
+    </div>
+</section>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Tab functionality
+    const tabBtns = document.querySelectorAll('.tab-btn');
+    const panels = document.querySelectorAll('.committee-panel');
+    
+    tabBtns.forEach(button => {
+        button.addEventListener('click', function() {
+            // Remove active class from all buttons
+            tabBtns.forEach(btn => btn.classList.remove('active'));
+            // Add active class to clicked button
+            this.classList.add('active');
+            
+            // Hide all panels
+            panels.forEach(panel => panel.classList.remove('active'));
+            // Show the panel that corresponds to the clicked button
+            const tabId = this.getAttribute('data-tab');
+            document.getElementById(tabId).classList.add('active');
+        });
+    });
+    
+    // Populate committee lists
+    populateCommitteeList('international-committee-list', international_advisory_committee);
+    populateCommitteeList('national-committee-list', national_advisory_committee);
+    populateCommitteeList('industry-advisors-list', industry_advisors, true);
+    
+    function populateCommitteeList(listId, committeeData, isIndustry = false) {
+        const list = document.getElementById(listId);
+        
+        if (list && committeeData) {
+            committeeData.forEach(member => {
+                const listItem = document.createElement('li');
+                listItem.className = 'committee-member';
+                
+                let html = `
+                    <h3 class="member-name">${member.name}</h3>
+                    <p class="member-title">${member.title}</p>
+                `;
+                
+                if (member.department && member.department !== '') {
+                    html += `<p class="member-department">${member.department}</p>`;
+                }
+                
+                html += `<p class="member-institution">${member.institution}</p>`;
+                
+                const hasContact = member.contact && (
+                    (member.contact.phone && member.contact.phone !== '') || 
+                    (member.contact.email && member.contact.email !== '') ||
+                    (isIndustry && member.contact.linkedin && member.contact.linkedin !== '')
+                );
+                
+                if (hasContact) {
+                    html += '<div class="member-contact">';
+                    
+                    if (member.contact.phone && member.contact.phone !== '') {
+                        html += `<p><i class="fas fa-phone"></i> ${member.contact.phone}</p>`;
+                    }
+                    
+                    if (member.contact.email && member.contact.email !== '') {
+                        html += `<p><i class="fas fa-envelope"></i> <a href="mailto:${member.contact.email}">${member.contact.email}</a></p>`;
+                    }
+                    
+                    if (isIndustry && member.contact.linkedin && member.contact.linkedin !== '') {
+                        html += `<p><i class="fab fa-linkedin"></i> <a href="https://${member.contact.linkedin}" target="_blank">LinkedIn Profile</a></p>`;
+                    }
+                    
+                    html += '</div>';
+                }
+                
+                listItem.innerHTML = html;
+                list.appendChild(listItem);
+            });
+        }
+    }
+});
+</script>
+
+    </main>
+    <footer>
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-info">
+                        <h3>ICAI25</h3>
+                        <p>International Conference on AI/ML, Digital Transformation & Sectoral Innovations</p>
+                        <p><i class="far fa-calendar-alt"></i> November 13-15, 2025</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Godavari Global University (GGU), Rajamahendravaram, Andhra Pradesh, India</p>
+                        <p><i class="fas fa-globe"></i> <a href="http://Aiconclave2025.in" target="_blank">Aiconclave2025.in</a></p>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="committee.html">Committee</a></li>
+                            <li><a href="paper-submissions.html">Paper Submissions</a></li>
+                            <li><a href="registration.html">Registration</a></li>
+                            <li><a href="speakers.html">Speakers</a></li>
+                            <li><a href="tracks.html">Tracks</a></li>
+                            <li><a href="important-dates.html">Important Dates</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-contact">
+                        <h4>Contact Us</h4>
+                        <p><i class="fas fa-envelope"></i> <a href="mailto:conferences@ggu.edu.in">conferences@ggu.edu.in</a></p>
+                        <p><i class="fas fa-globe"></i> <a href="http://Aiconclave2025.in" target="_blank">Conference Website</a></p>
+                        <div class="social-icons">
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; <span id="current-year">2025</span> ICAI25 - International Conference on AI/ML, Digital Transformation & Sectoral Innovations. All Rights Reserved.</p>
+                <p>Hosted by <a href="#" target="_blank">Godavari Global University (GGU)</a></p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // Set current year in the footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        
+        // Set active navigation item
+        document.addEventListener('DOMContentLoaded', function() {
+            const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+            const navId = 'nav-' + (currentPage.split('.')[0] || 'home');
+            const navLink = document.getElementById(navId);
+            if (navLink) {
+                navLink.classList.add('active');
+            }
+        });
+    </script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

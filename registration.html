@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration | ICAI25</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="https://firebasestorage.googleapis.com/v0/b/whatsup-519.firebasestorage.app/o/favicon-32x32.png?alt=media&token=c3233c51-328c-47dc-95e4-c3b95d068bcb">
+    <meta name="description" content="ICAI25 - International Conference on AI/ML, Digital Transformation & Sectoral Innovations, hosted by Godavari Global University">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <script src="assets/js/site-data.js"></script>
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-content">
+            <div class="loader"></div>
+            <h2>ICAI25</h2>
+            <p>Loading amazing content...</p>
+        </div>
+    </div>
+
+    <header>
+        <div class="header-top">
+            <div class="container">
+                <div class="header-contact">
+                    <a href="mailto:conferences@ggu.edu.in"><i class="fas fa-envelope"></i> conferences@ggu.edu.in</a>
+                </div>
+                <div class="header-dates">
+                    <span><i class="far fa-calendar-alt"></i> November 13-15, 2025</span>
+                </div>
+            </div>
+        </div>
+        <div class="header-main">
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="https://vduoxfcddksibwrpiuqd.supabase.co/storage/v1/object/public/image/images/Picsart_25-03-23_08-07-46-287.jpg" alt="ICAI25 Logo" class="logo-image">
+                    </a>
+                </div>
+                <nav id="main-nav">
+                    <button id="menu-toggle" aria-label="Toggle Navigation Menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul class="nav-links">
+                        <li><a href="index.html" id="nav-home">Home</a></li>
+                        <li><a href="committee.html" id="nav-committee">Committee</a></li>
+                        <li><a href="paper-submissions.html" id="nav-paper-submissions">Paper Submissions</a></li>
+                        <li><a href="registration.html" id="nav-registration" class="active">Registration</a></li>
+                        <li><a href="speakers.html" id="nav-speakers">Speakers</a></li>
+                        <li><a href="tracks.html" id="nav-tracks">Tracks</a></li>
+                        <li><a href="important-dates.html" id="nav-important-dates">Important Dates</a></li>
+                        <li><a href="contact.html" id="nav-contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+
+<div class="page-header">
+    <div class="container">
+        <h1 class="page-title">Registration</h1>
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item">Registration</li>
+        </ul>
+    </div>
+</div>
+
+<section class="registration section">
+    <div class="container">
+        <div class="content-section">
+            <h2 class="content-title">Registration Fees</h2>
+            
+            <div class="content-box">
+                <h3>Early Bird Registration (Before <span id="early-bird-date"></span>)</h3>
+                <div class="registration-table-container">
+                    <table class="fee-table registration-table">
+                        <thead>
+                            <tr>
+                                <th>Category</th>
+                                <th>Indian Delegates (INR)</th>
+                                <th>International Delegates (USD)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Regular (Academia/Industry)</td>
+                                <td>₹8,000</td>
+                                <td>$300</td>
+                            </tr>
+                            <tr>
+                                <td>Student/Research Scholar</td>
+                                <td>₹6,000</td>
+                                <td>$200</td>
+                            </tr>
+                            <tr>
+                                <td>Additional Paper (Same Author)</td>
+                                <td>₹4,000</td>
+                                <td>$150</td>
+                            </tr>
+                            <tr>
+                                <td>Attendee Only (No Paper)</td>
+                                <td>₹5,000</td>
+                                <td>$150</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <h3 style="margin-top: 2rem;">Regular Registration (Before <span id="regular-date"></span>)</h3>
+                <div class="registration-table-container">
+                    <table class="fee-table registration-table">
+                        <thead>
+                            <tr>
+                                <th>Category</th>
+                                <th>Indian Delegates (INR)</th>
+                                <th>International Delegates (USD)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Regular (Academia/Industry)</td>
+                                <td>₹10,000</td>
+                                <td>$350</td>
+                            </tr>
+                            <tr>
+                                <td>Student/Research Scholar</td>
+                                <td>₹7,500</td>
+                                <td>$250</td>
+                            </tr>
+                            <tr>
+                                <td>Additional Paper (Same Author)</td>
+                                <td>₹5,000</td>
+                                <td>$200</td>
+                            </tr>
+                            <tr>
+                                <td>Attendee Only (No Paper)</td>
+                                <td>₹6,000</td>
+                                <td>$200</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <h3 style="margin-top: 2rem;">Late Registration (After <span id="late-date"></span>)</h3>
+                <div class="registration-table-container">
+                    <table class="fee-table registration-table">
+                        <thead>
+                            <tr>
+                                <th>Category</th>
+                                <th>Indian Delegates (INR)</th>
+                                <th>International Delegates (USD)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Regular (Academia/Industry)</td>
+                                <td>₹12,000</td>
+                                <td>$400</td>
+                            </tr>
+                            <tr>
+                                <td>Student/Research Scholar</td>
+                                <td>₹9,000</td>
+                                <td>$300</td>
+                            </tr>
+                            <tr>
+                                <td>Additional Paper (Same Author)</td>
+                                <td>₹6,000</td>
+                                <td>$250</td>
+                            </tr>
+                            <tr>
+                                <td>Attendee Only (No Paper)</td>
+                                <td>₹7,000</td>
+                                <td>$250</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div style="background-color: var(--light-color); padding: 1.5rem; border-radius: var(--border-radius); margin-top: 2rem;">
+                    <h4><i class="fas fa-info-circle"></i> Registration Fee Includes:</h4>
+                    <ul>
+                        <li>Conference Kit</li>
+                        <li>Access to all technical sessions</li>
+                        <li>Conference proceedings</li>
+                        <li>Refreshments and lunch during the conference days</li>
+                        <li>Certificate of participation/presentation</li>
+                        <li>Conference dinner (for full registrations)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="content-section">
+            <h2 class="content-title">Registration Process</h2>
+            
+            <div class="registration-steps content-box">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h4>Complete the Registration Form</h4>
+                        <p>Fill out the online registration form with your personal and professional details.</p>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h4>Make Payment</h4>
+                        <p>Pay the registration fee through the online payment gateway or bank transfer. Details are provided below.</p>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h4>Upload Payment Proof</h4>
+                        <p>Upload the payment confirmation or receipt to complete your registration.</p>
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h4>Confirmation</h4>
+                        <p>You will receive a confirmation email with your registration details and a unique registration ID.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="content-section">
+            <h2 class="content-title">Payment Details</h2>
+            
+            <div class="content-box">
+                <h3>Bank Transfer</h3>
+                <div style="background-color: var(--light-color); padding: 1.5rem; border-radius: var(--border-radius);">
+                    <p><strong>Account Name:</strong> School of Computing</p>
+                    <p><strong>Bank Name:</strong> ICICI Bank</p>
+                    <p><strong>Account Number:</strong> 631505015421</p>
+                    <p><strong>IFSC Code:</strong> ICIC0006315</p>
+                    <p><strong>SWIFT Code:</strong> ICICINBBXXX (for international transfers)</p>
+                    <p><strong>Reference:</strong> ICAI25-[Your Full Name]</p>
+                </div>
+                
+                <h3 style="margin-top: 2rem;">Online Payment</h3>
+                <p>Online payment facility will be available soon. Please check back later.</p>
+                
+                <div style="margin-top: 2rem; padding: 1rem; border-left: 3px solid var(--accent-color); background-color: #f8f9fa;">
+                    <h4 style="color: var(--accent-color);"><i class="fas fa-exclamation-triangle"></i> Important Note:</h4>
+                    <p>At least one author of each accepted paper must register for the conference. Each registration covers only one paper. For additional papers by the same author, an additional fee applies as mentioned in the fee structure.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="content-section">
+            <h2 class="content-title">Cancellation Policy</h2>
+            
+            <div class="content-box">
+                <ul>
+                    <li>Cancellations received before October 15, 2025: 70% refund of the registration fee.</li>
+                    <li>Cancellations received between October 16 - 31, 2025: 50% refund of the registration fee.</li>
+                    <li>No refunds for cancellations after November 1, 2025.</li>
+                    <li>All cancellation requests must be submitted in writing to the conference email.</li>
+                    <li>Refunds will be processed after the conference.</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div style="text-align: center; margin-top: 3rem;">
+            <a href="#" class="btn" style="background-color: var(--accent-color); padding: 1rem 2rem; font-size: 1.1rem;">Register Now</a>
+        </div>
+    </div>
+</section>
+
+<section class="cta section" style="background-color: var(--light-color); text-align: center;">
+    <div class="container">
+        <h2>Need Registration Assistance?</h2>
+        <p style="margin-bottom: 1.5rem;">If you have any questions regarding registration, please don't hesitate to contact us.</p>
+        <a href="contact.html" class="btn">Contact Us</a>
+    </div>
+</section>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Set registration dates based on data from site-data.js
+    try {
+        if (typeof registration_dates !== 'undefined') {
+            // Set early bird date
+            const earlyBirdElements = document.querySelectorAll('#early-bird-date');
+            earlyBirdElements.forEach(element => {
+                if (element && registration_dates.early_bird) {
+                    element.textContent = registration_dates.early_bird;
+                }
+            });
+            
+            // Set regular registration date
+            const regularDateElements = document.querySelectorAll('#regular-date');
+            regularDateElements.forEach(element => {
+                if (element && registration_dates.regular) {
+                    element.textContent = registration_dates.regular;
+                }
+            });
+            
+            // Set late registration date (using regular date as reference)
+            const lateDateElements = document.querySelectorAll('#late-date');
+            lateDateElements.forEach(element => {
+                if (element && registration_dates.regular) {
+                    element.textContent = registration_dates.regular;
+                }
+            });
+        } else {
+            console.log('Registration dates not available');
+            
+            // Fallback to hard-coded dates if registration_dates is not available
+            document.querySelectorAll('#early-bird-date').forEach(el => { el.textContent = 'October 1, 2025'; });
+            document.querySelectorAll('#regular-date').forEach(el => { el.textContent = 'November 1, 2025'; });
+            document.querySelectorAll('#late-date').forEach(el => { el.textContent = 'November 1, 2025'; });
+        }
+    } catch (error) {
+        console.error('Error setting registration dates:', error);
+    }
+});
+</script>
+
+    </main>
+    <footer>
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-info">
+                        <h3>ICAI25</h3>
+                        <p>International Conference on AI/ML, Digital Transformation & Sectoral Innovations</p>
+                        <p><i class="far fa-calendar-alt"></i> November 13-15, 2025</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Godavari Global University (GGU), Rajamahendravaram, Andhra Pradesh, India</p>
+                        <p><i class="fas fa-globe"></i> <a href="http://Aiconclave2025.in" target="_blank">Aiconclave2025.in</a></p>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="committee.html">Committee</a></li>
+                            <li><a href="paper-submissions.html">Paper Submissions</a></li>
+                            <li><a href="registration.html">Registration</a></li>
+                            <li><a href="speakers.html">Speakers</a></li>
+                            <li><a href="tracks.html">Tracks</a></li>
+                            <li><a href="important-dates.html">Important Dates</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-contact">
+                        <h4>Contact Us</h4>
+                        <p><i class="fas fa-envelope"></i> <a href="mailto:conferences@ggu.edu.in">conferences@ggu.edu.in</a></p>
+                        <p><i class="fas fa-globe"></i> <a href="http://Aiconclave2025.in" target="_blank">Conference Website</a></p>
+                        <div class="social-icons">
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; <span id="current-year">2025</span> ICAI25 - International Conference on AI/ML, Digital Transformation & Sectoral Innovations. All Rights Reserved.</p>
+                <p>Hosted by <a href="#" target="_blank">Godavari Global University (GGU)</a></p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // Set current year in the footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        
+        // Set active navigation item
+        document.addEventListener('DOMContentLoaded', function() {
+            const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+            const navId = 'nav-' + (currentPage.split('.')[0] || 'home');
+            const navLink = document.getElementById(navId);
+            if (navLink) {
+                navLink.classList.add('active');
+            }
+        });
+    </script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
